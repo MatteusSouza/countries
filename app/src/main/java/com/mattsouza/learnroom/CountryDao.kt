@@ -4,12 +4,13 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import kotlinx.coroutines.flow.Flow
 
 @Dao
-interface NameDao {
+interface CountryDao {
 
     @Query("SELECT * FROM countries_table ORDER BY country_name ASC")
-    fun getCountries(): List<Country>
+    fun getCountries(): Flow<List<Country>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(country: Country)
