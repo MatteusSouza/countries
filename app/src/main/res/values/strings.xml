@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">LearnRoom</string>
     <string name="add_country">Add Country</string>
+    <string name="hint_country">Country name . . .</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Country name not saved because it is empty.</string>
+    <string name="add_word">Add country</string>
 </resources>
